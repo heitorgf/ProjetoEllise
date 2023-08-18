@@ -12,24 +12,101 @@ h5,
 h6 {
     font-family: "Oxygen", arial;
 }
-.button{
+
+/*  */
+.wppBtn {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    width: 60px;
+    height: 60px;
+    z-index: 999;
+    max-width: 60px;
+    max-height: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8cGF0aCBzdHlsZT0iZmlsbDojNENBRjUwOyIgZD0iTTI1Ni4wNjQsMGgtMC4xMjhsMCwwQzExNC43ODQsMCwwLDExNC44MTYsMCwyNTZjMCw1NiwxOC4wNDgsMTA3LjkwNCw0OC43MzYsMTUwLjA0OGwtMzEuOTA0LDk1LjEwNCAgbDk4LjQtMzEuNDU2QzE1NS43MTIsNDk2LjUxMiwyMDQsNTEyLDI1Ni4wNjQsNTEyQzM5Ny4yMTYsNTEyLDUxMiwzOTcuMTUyLDUxMiwyNTZTMzk3LjIxNiwwLDI1Ni4wNjQsMHoiLz4KPHBhdGggc3R5bGU9ImZpbGw6I0ZBRkFGQTsiIGQ9Ik00MDUuMDI0LDM2MS41MDRjLTYuMTc2LDE3LjQ0LTMwLjY4OCwzMS45MDQtNTAuMjQsMzYuMTI4Yy0xMy4zNzYsMi44NDgtMzAuODQ4LDUuMTItODkuNjY0LTE5LjI2NCAgQzE4OS44ODgsMzQ3LjIsMTQxLjQ0LDI3MC43NTIsMTM3LjY2NCwyNjUuNzkyYy0zLjYxNi00Ljk2LTMwLjQtNDAuNDgtMzAuNC03Ny4yMTZzMTguNjU2LTU0LjYyNCwyNi4xNzYtNjIuMzA0ICBjNi4xNzYtNi4zMDQsMTYuMzg0LTkuMTg0LDI2LjE3Ni05LjE4NGMzLjE2OCwwLDYuMDE2LDAuMTYsOC41NzYsMC4yODhjNy41MiwwLjMyLDExLjI5NiwwLjc2OCwxNi4yNTYsMTIuNjQgIGM2LjE3NiwxNC44OCwyMS4yMTYsNTEuNjE2LDIzLjAwOCw1NS4zOTJjMS44MjQsMy43NzYsMy42NDgsOC44OTYsMS4wODgsMTMuODU2Yy0yLjQsNS4xMi00LjUxMiw3LjM5Mi04LjI4OCwxMS43NDQgIGMtMy43NzYsNC4zNTItNy4zNiw3LjY4LTExLjEzNiwxMi4zNTJjLTMuNDU2LDQuMDY0LTcuMzYsOC40MTYtMy4wMDgsMTUuOTM2YzQuMzUyLDcuMzYsMTkuMzkyLDMxLjkwNCw0MS41MzYsNTEuNjE2ICBjMjguNTc2LDI1LjQ0LDUxLjc0NCwzMy41NjgsNjAuMDMyLDM3LjAyNGM2LjE3NiwyLjU2LDEzLjUzNiwxLjk1MiwxOC4wNDgtMi44NDhjNS43MjgtNi4xNzYsMTIuOC0xNi40MTYsMjAtMjYuNDk2ICBjNS4xMi03LjIzMiwxMS41ODQtOC4xMjgsMTguMzY4LTUuNTY4YzYuOTEyLDIuNCw0My40ODgsMjAuNDgsNTEuMDA4LDI0LjIyNGM3LjUyLDMuNzc2LDEyLjQ4LDUuNTY4LDE0LjMwNCw4LjczNiAgQzQxMS4yLDMyOS4xNTIsNDExLjIsMzQ0LjAzMiw0MDUuMDI0LDM2MS41MDR6Ii8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=);
+}
+
+/* pulse */
+.pulse {
+    position: fixed;
+}
+
+.pulse:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    border: 3px solid #4caf50;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    /*   animation: pulse 2s ease 0s infinite; */
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    80% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(2);
+    }
+}
+
+/*  */
+.linkbanner {
     display: inline-block;
-    background-color: #58c4c4;
+    width: 1000px;
+}
+
+.bside-1 {
+    float: left;
+    width: 60%;
+}
+
+.bside-2 {
+    width: 40%;
+    float: right;
+    line-height: 1.5px;
+
+}
+
+
+
+
+.button {
+    display: inline-block;
+    background-color: #25D366;
     padding: .75em 1.5em;
     border-radius: 0.3125em;
     text-decoration: none;
     color: white;
     text-align: center;
-    
+
 }
-.clearfix:after, .row:after{
+
+.clearfix:after,
+.row:after {
     content: ' ';
     display: block;
     clear: both;
 }
-.button:hover{
-    background-color:#37a0a0;
+
+.button:hover {
+    background-color: #25D366;
 }
+
 .top-header-logo {
     margin: .5em;
 }
@@ -44,10 +121,11 @@ h6 {
     text-align: center;
 }
 
-.top-nav ul {
+.top-nav-ul {
     margin: 0;
     padding: 0.5em 0;
     list-style: none;
+    display: inline-block;
 }
 
 .top-nav a {
@@ -58,7 +136,7 @@ h6 {
 }
 
 .top-nav a:hover {
-    color:#EBDEC5 ;
+    color: #EBDEC5;
 }
 
 .top-content {
@@ -69,7 +147,7 @@ h6 {
 }
 
 .top-content-title {
-    color: #F7F3EB;
+    color: #9D6C45;
     font-size: 1.375em;
     margin: 1.375em;
     /* 22/16=1.375  O valor base do 1em é 16 então é nescessario dividir o valor em pixels que eu quero por 16 pra achar a quantidade certa em 1em*/
@@ -80,161 +158,232 @@ h6 {
     font-size: 1em;
     line-height: 1.3;
 }
-.middle-content{
+
+.middle-content {
     padding: 2em;
     background-color: #f6f6f6;
     text-align: center;
 }
-.middle-content-title{
+
+.middle-content-title {
     font-size: 1.25em;
     color: #9D6C45;
     text-transform: uppercase;
 }
-.middle-content p{
+
+.middle-content p {
     line-height: 1.5;
     color: #222;
 }
-.middle-content span[class^=icon]{
+
+.middle-content span[class^=icon] {
     font-size: 3em;
     color: #9D6C45;
 }
-.main-content{
+
+.main-content {
     padding: 2em;
 }
+
 .main-content p {
     line-height: 1.5;
 }
-.main-content-article{
-    margin-bottom: 3.5em ;
+
+.main-content-article {
+    margin-bottom: 3.5em;
 }
-.main-content-title{
+
+.main-content-title {
     letter-spacing: .2em;
     font-size: 1.25em;
     color: #9D6C45;
     text-transform: uppercase;
-    
+
 }
-.icon-play{
+
+.icon-play {
     height: 5em;
     display: none;
 }
-.icon-play img{
+
+.icon-play img {
     max-width: 100%;
     max-height: 100%;
 }
-.hidden{
+
+.hidden {
     width: 0;
     height: 0;
     overflow: hidden;
     opacity: 0;
     display: block;
 }
-.final{
+
+.final {
     background-color: #25303e;
     color: #83969f;
     text-align: center;
     padding-bottom: 2em;
 }
-.final-menushare{
+
+.final-menushare {
     background-color: #303d4c;
     padding: .5em;
 }
 
-.final-menushare li{
+.final-menushare li {
     display: inline-block;
     margin: 0 1em;
 }
-.final-menushare a{
+
+.final-menushare a {
     font-size: 1.1em;
     text-decoration: none;
     color: white;
 }
-
+@media screen and (min-width: 0) {
+    .top-nav a{
+        color: white;
+    }
+}
 /* 780/16= 48.75 */
 @media screen and (min-width: 48.75em) {
-    .icon-play{
+    .icon-play {
         height: 5em;
         display: block;
     }
-    
-    .top-header-logo{
+
+    .top-header-logo {
         float: left;
     }
-    .top-nav{
+
+    .top-nav {
         background-color: transparent;
         float: left;
         margin-top: 15px;
         font-size: large;
     }
-    .top-nav ul{
+
+    .top-nav ul {
         margin: 0;
         padding: 0;
     }
-    .top-nav li{
-    display: inline-block;
-    margin-left: 6em;
-   
+
+    .top-nav li {
+        display: inline-block;
+        margin-left: 1em;
+
     }
-    .top-nav a{
-        color:#9D6C45;
-       
+
+    .top-nav a {
+        color: #9D6C45;
+
     }
-    .top-nav a:hover{
-        color:#EBDEC5;
+
+    .top-nav a:hover {
+        color: #EBDEC5;
     }
-    .top-content{
+
+    .top-content {
         background-color: #9D6C45;
-        color: white;   
-    }
-    .top-content-title, .top-content-subtitle{
-        color: white;   
+        color: white;
     }
 
+    .top-content-title,
+    .top-content-subtitle {
+        color: white;
+    }
 
 
-.col-1-4{
-    width: 44%;
-    margin: 3%;
-    float: left;
+
+    .col-1-4 {
+        width: 44%;
+        margin: 3%;
+        float: left;
+    }
+
+    .main-content-article .button {
+        float: right;
+    }
+    .bside-2 a{
+        padding: 18px 10px;
+        margin: 0;
+    }
+    .linkbanner {
+
+        width:650px;
+    }
 }
-.main-content-article .button{
-    float: right;
-}
-}
+
 /* 1000/16 */
 @media screen and (min-width: 62.5em) {
-.top-content{
-  /*   background-color: #521a66;
+    .top-content {
+        /*   background-color: #521a66;
     background-image: url(/images/bg_topo_1198x670.jpg); */
-    background: #9D6C45  url(/images/Ellese\ -\ banner\ -1200\ .png);
-    height: 22em;
-    padding: 17em 0 0 0;
-    background-position: center bottom;
+        background: #9D6C45 url(/images/Ellese\ -\ banner\ -1200\ .png);
+        height: 22em;
+        padding: 17em 0 0 0;
+        background-position: center bottom;
+    }
+    .linkbanner {
+
+        width:700px;
+    }
+
+    .top-nav li {
+        margin-left: 1em;
+    }
+    .bside-2 a{
+        padding: 18px 10px;
+        margin: 0;
+    }
 }
 
-}
 /* 1024/16 */
 @media screen and (min-width: 74em) {
-    .top-content{ 
+    .top-content {
         background-image: url(/images/Ellese\ -\ banner\ -1600\ .png);
         padding: 19em 17em 10em;
         background-position: center top;
+
     }
-    .col-1-4{
+
+    .col-1-4 {
         width: 23%;
         margin: 1%;
     }
-    .col-1-2{
+
+    .col-1-2 {
         width: 48%;
         margin: 1%;
         float: left;
     }
-    .main-content-article .button{
+
+    .main-content-article .button {
         float: none;
     }
-    .icon-play{
+
+    .icon-play {
         height: 7em;
-        
+
     }
 
+    .top-nav li {
+        margin-left: 10px;
+    }
+
+    .bside-1 {
+        margin-left: 0;
+    }
+
+
+    .bside-2 a{
+        padding: 18px 10px;
+        margin: 0;
+    }
+
+    .linkbanner {
+
+        width: 1000px;
+    }
 }
