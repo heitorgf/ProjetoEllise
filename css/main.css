@@ -38,7 +38,7 @@ h6 {
 }
 
 .button:hover {
-    background-color: #25D366;
+    background-color: #26e26b;
 }
 
 .top-header-logo {
@@ -174,12 +174,16 @@ h6 {
     opacity: 0;
     display: block;
 }
-
+.map-fx{
+   
+    text-align: center;
+}
 .final {
     background-color: #25303e;
     color: #83969f;
     text-align: center;
     padding-bottom: 2em;
+    height: 300px;
 }
 
 .final-menushare {
@@ -197,6 +201,54 @@ h6 {
     text-decoration: none;
     color: white;
 }
+.final h2{
+    font-size: 15px;
+    color: #34B7F1;
+    line-height: 1px;
+}
+.final p{
+    font-size: 15px;
+    color: white;
+
+}
+.final div{
+   
+    text-align: left;
+   margin-left: 10px;
+}
+
+
+input,
+label,
+textarea,
+select {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input,
+textarea,
+select {
+    background-color: #cccc;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    margin-bottom: 15px;
+
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid #49bf9d;
+    outline: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
  @media screen and (min-width: 0) {
 
     .bside-1 {
@@ -350,6 +402,7 @@ h6 {
         margin: 1%;
     }
 
+   
     .col-1-2 {
         width: 48%;
         margin: 1%;

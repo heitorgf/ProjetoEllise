@@ -11,7 +11,12 @@
 </head>
 
 <body>
-    <!-- Pegar coisas do top-nav e fazer genericas enquanto partes especificas vao para o bside-1 e 2-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://wa.me/55(aqui seu numero com ddd | tudo junto)?text=Adorei%20seu%20artigo" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+  z-index:1000;" target="_blank">
+        <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+    </a>
+
     <span><a href="#" class="wppBtn pulse"></a></span>
     <header class="top-header clearfix">
         <img src="images/Logotipo b.png" alt="logotipo Ellise" class="top-header-logo">
@@ -24,7 +29,7 @@
                         <li><a href="#">Contato</a> </li>
                     </ul>
                 </div>
-           
+
                 <div class="bside-2 one-lines">
                     <ul class="top-nav-ul">
                         <li><a href="#" class="icon-facebook"><span class="hidden">Facebook</span></a></li>
@@ -48,7 +53,7 @@
     </section>
     <section class="middle-content row">
         <article class="col-1-4">
-            <span class="icon-stopwatch"></span>
+            <span><img src="images/thumbs/01.jpg" width="300px" alt=""></span>
             <h3 class="middle-content-title">Designer Guff</h3>
             <p> Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
                 aute irure
@@ -56,7 +61,7 @@
             </p>
         </article>
         <article class="col-1-4">
-            <span class="icon-stats-bars2"></span>
+            <span><img src="images/thumbs/02.jpg" width="300px" alt=""></span>
             <h3 class="middle-content-title"> Detaild Stats</h3>
             <p> Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
                 aute irure
@@ -64,7 +69,7 @@
             </p>
         </article>
         <article class="col-1-4">
-            <span class="icon-clock"></span>
+            <span><img src="images/thumbs/03.jpg" width="300px" alt=""></span>
             <h3 class="middle-content-title">
                 Dashboard</h3>
             <p> Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
@@ -73,7 +78,7 @@
             </p>
         </article>
         <article class="col-1-4">
-            <span class="icon-cog"></span>
+            <span><img src="images/thumbs/04.jpg" width="300px" alt=""></span>
             <h3 class="middle-content-title">
                 Development</h3>
             <p> Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
@@ -83,24 +88,7 @@
         </article>
     </section>
     <section class="main-content row">
-        <article class="main-content-article col-1-2">
-            <h3 class="main-content-title">
-                Designg Heading
-            </h3>
-            <p> Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure
-                dolor in reprehenderit in voluptate velit esse cillum
-            </p>
-        </article>
-        <article class="main-content-article col-1-2">
-            <h3 class="main-content-title">
-                Designg Trends
-            </h3>
-            <p> Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure
-                dolor in reprehenderit in voluptate velit esse cillum
-            </p>
-        </article>
+
         <article class="main-content-article clearfix col-1-2">
             <h3 class="main-content-title">
 
@@ -125,23 +113,82 @@
             <a href="#" class="button"> Buy Now
             </a>
         </article>
-
     </section>
+    <section class="form-fx">
 
+        <div>
+
+            <div class="col-1-2">
+                <form>
+                    <h3 class="main-content-title">Contato</h3>
+                    <label for="name">Nome</label>
+                    <input type="text" name="nome" id="nome">
+                    <label for="name">Email</label>
+                    <input type="email" name="email" id="email">
+                    <select>
+                        <option value="0">Selecione... </option>
+                        <option value="1">HTML </option>
+                        <option value="2">CSS </option>
+                        <option value="3">Javascript </option>
+                    </select>
+                    <label>
+                        <input type="radio" value="baixa" name="prioridade"> Baixa prioridade
+                        <input type="radio" value="media" name="prioridade"> Media prioridade
+                        <input type="radio" value="alta" name="prioridade"> Alta prioridade
+                    </label>
+                    <label>
+                        <input type="checkbox" name="copy" value="1"> Envie uma cópia
+                    </label>
+                    <label>
+                        <input type="checkbox" name="human" value="1"> Sou humano
+                    </label>
+                    <label for="msg">Mensagem </label>
+                    <textarea placeholder="Digite uma mensagem" name="msg" id="msg"></textarea>
+                    <input type="submit" class="button-default button-default-big" value="Enviar">
+                    <input type="reset" class="button-default button-default-stroke button-default-big" value="Limpar">
+
+                </form>
+
+            </div>
+
+            <div class="col-1-2">
+                <img src="images/Ellese - Mockup 500.png" width="100%" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="map-fx">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43235.32977529811!2d-49.30030624445412!3d-16.701917822751547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef6bd58d80867%3A0xef692bad20d2678e!2zR29pw6JuaWEsIEdP!5e0!3m2!1spt-PT!2sbr!4v1692832132774!5m2!1spt-PT!2sbr"
+            width="95%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
     <footer class="final">
         <ul class="final-menushare">
             <li><a href="#" class="icon-facebook"><span class="hidden">Facebook</span></a></li>
             <li><a href="#" class="icon-twitter"><span class="hidden">Twitter</span></a></li>
             <li><a href="#" class="icon-google-plus"><span class="hidden">Google+</span></a></li>
-
+            <li><a href="#" class="icon-google-plus"><span class="hidden">Google+</span></a></li>
         </ul>
-        <p>
-            Copyright The Range</p>
-        <p>
-            Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-            irure
-            dolor in reprehenderit in voluptate velit esse cillum
-        </p>
+        <div>
+            <div class="col-1-2">
+                <h2>Ed. Orion Business & Health Complex</h2>
+                <p>Av. Portugal, 1148 - Sala 2101 B - Setor Marista
+                    <br>
+                    Goiânia - GO
+                </p>
+                <h2>Atendimento</h2>
+                <p>Segunda - Sexta
+                    <br>
+                    0:00 - 0:00
+                </p>
+                <h2>Whatsapp</h2>
+                <p>(62)99999-9999</p>
+            </div>
+            <div class="col-1-2">
+                <img src="images/Logotipo c.png" alt="Logo Ellise do footer">
+
+            </div>
+        </div>
     </footer>
 
     <!-- Botão que escrolla -->
