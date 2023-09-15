@@ -53,6 +53,7 @@ h6 {
 .top-nav {
     background-color: #9D6C45;
     text-align: center;
+  
 }
 
 .top-nav-ul {
@@ -278,7 +279,7 @@ input[type="checkbox"] {
 
     .top-nav {
         background-color: transparent;
-        float: left;
+        float: right;
         margin-top: 15px;
         font-size: large;
         text-align: center;

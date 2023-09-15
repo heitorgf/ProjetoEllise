@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <a href="https://wa.me/55(aqui seu numero com ddd | tudo junto)?text=Adorei%20seu%20artigo" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
   z-index:1000;" target="_blank">
@@ -24,9 +25,10 @@
             <div class="linkbanner">
                 <div class="bside-1">
                     <ul class="top-nav-ul">
-                        <li><a href="#">Produtos</a> </li>
-                        <li><a href="#">Serviços</a> </li>
-                        <li><a href="#">Contato</a> </li>
+
+                        <li><a href="javascript:scrollParaElemento()">Serviços</a> </li>
+                        <li><a href="javascript:scrollParaElemento2()">Contato</a> </li>
+                        <li><a href="javascript:scrollParaElemento3()">Endereço</a> </li>
                     </ul>
                 </div>
 
@@ -61,7 +63,7 @@
             </p>
         </article>
         <article class="col-1-4">
-            <span><img src="images/thumbs/02.jpg" width="300px" alt=""></span>
+            <span id="servi-id"><img src="images/thumbs/02.jpg" width="300px" alt=""></span>
             <h3 class="middle-content-title"> Detaild Stats</h3>
             <p> Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
                 aute irure
@@ -90,6 +92,7 @@
     <section class="main-content row">
 
         <article class="main-content-article clearfix col-1-2">
+
             <h3 class="main-content-title">
 
                 Designg Users
@@ -116,7 +119,7 @@
     </section>
     <section class="form-fx">
 
-        <div>
+        <div id="contato-id">
 
             <div class="col-1-2">
                 <form>
@@ -157,7 +160,7 @@
         </div>
     </section>
     <section class="map-fx">
-        <iframe
+        <iframe id="ende-id"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43235.32977529811!2d-49.30030624445412!3d-16.701917822751547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef6bd58d80867%3A0xef692bad20d2678e!2zR29pw6JuaWEsIEdP!5e0!3m2!1spt-PT!2sbr!4v1692832132774!5m2!1spt-PT!2sbr"
             width="95%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -191,8 +194,28 @@
         </div>
     </footer>
 
-    <!-- Botão que escrolla -->
+    <script>
+        const meuElemento = document.getElementById('servi-id');
+        const meuElemento2 = document.getElementById('contato-id');
+        const meuElemento3 = document.getElementById('ende-id');
 
+
+        function scrollParaElemento() {
+            meuElemento.scrollIntoView({ behavior: "smooth" });
+
+        }
+        function scrollParaElemento2() {
+
+            meuElemento2.scrollIntoView({ behavior: "smooth" });
+
+        }
+        function scrollParaElemento3() {
+
+            meuElemento3.scrollIntoView({ behavior: "smooth" });
+        }
+
+
+    </script>
 
 </body>
 
