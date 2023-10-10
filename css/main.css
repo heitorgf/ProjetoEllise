@@ -116,12 +116,12 @@ h6 {
     transition: 0.5s ease;
 }
 
-.top-content {
+/* .top-content {
     padding: 1em;
     text-align: center;
     background-color: #f6f6f6;
 
-}
+} */
 
 .top-content-title {
     color: #9D6C45;
@@ -467,8 +467,8 @@ input[type="checkbox"] {
     }
     .bside-1 {
         float: left;
-        width: 50%;
-        position: absolute;
+        width: 40%;
+        /* position: absolute; */
     }
     
     .bside-2 {
