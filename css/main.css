@@ -13,25 +13,35 @@ h6 {
     font-family: "Oxygen", arial;
 }
 
-
+.content-about h3{
+text-align: center;
+}
 .content-about{
     height: fit-content;
     background-color: #c7b289;
-  
+
+}
+.content-about .button {
+  /*   float: right; */
+  margin-left: 30px;
 }
 
-.about-txt{
-    text-align: center;
-    
+.about-txt p{
+    text-align: left;
+    padding: 0 50px;
     font-size: 20px;
     
 }
+ .about-txt li{
+    margin-left: 15px;
+} 
 .about-img{
     
     height: 100%;
 
 }
 .tratamento{
+    width: 100%;  
     padding: 2em;
    
 }
@@ -207,7 +217,7 @@ h6 {
     color: #83969f;
     text-align: center;
     padding-bottom: 2em;
-    height: 300px;
+    height: 350px;
 }
 
 .final-menushare {
@@ -331,11 +341,15 @@ input[type="checkbox"] {
         transition: .5s ease;
     }
 
- /*     .top-content {
+    .top-content {
         background-color: #9D6C45;
         color: white;
+        background: #9D6C45 url(/images/Ellese\ -\ banner\ -\ 780.JPG);
+        height: 22em;
+       
+        
     } 
- */
+ 
     .top-content-title,
     .top-content-subtitle {
         color: white;
