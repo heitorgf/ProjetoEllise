@@ -18,7 +18,7 @@ text-align: center;
 }
 .content-about{
     height: fit-content;
-    background-color: #c7b289;
+    background-color: #cac0b6;
 
 }
 .content-about .button {
@@ -32,13 +32,22 @@ text-align: center;
     font-size: 20px;
     
 }
+.about-txt{
+    padding-top: 20px;
+}
  .about-txt li{
     margin-left: 15px;
 } 
 .about-img{
-    
-    height: 100%;
+    text-align: center;
+   padding: 20px 0; 
 
+}
+.middle-content img{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.about-img img{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .tratamento{
     width: 100%;  
@@ -76,7 +85,7 @@ text-align: center;
 
 .top-header {
    /*  text-align: justify; */
-    
+
 }
 
 .top-nav {
