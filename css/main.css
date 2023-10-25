@@ -355,6 +355,7 @@ input[type="checkbox"] {
 .slide{
     width: 25%;
     position: relative;
+  
 }
 .slides{
     display: flex;
