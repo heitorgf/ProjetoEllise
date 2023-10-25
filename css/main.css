@@ -53,7 +53,7 @@ text-align: center;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .tratamento{
-    width: 100%;  
+     
     padding: 2em;
    
 }
@@ -123,6 +123,8 @@ text-align: center;
 }
 .one-lines li{
     display: inline-block;
+    padding: 0.3px;
+
 }
 .bside-1 {
     float: left;
@@ -138,12 +140,16 @@ text-align: center;
 
 }
 
-
-
+.one-lines a{
+    padding: 0.5em;
+}
+.two-lines a{
+    padding: 1em;
+}
 .top-nav a {
     color: white;
     text-decoration: none;
-    padding: 1em;
+   
     display: block;
 }
 
@@ -339,6 +345,91 @@ input[type="checkbox"] {
     /* padding: 15px 55px; */
     padding-bottom: 50px;
 }
+.slider{
+    margin: 0 auto;
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+
+}
+.slide{
+    width: 25%;
+    position: relative;
+}
+.slides{
+    display: flex;
+    width: 400%;
+    height: 400px;
+}
+.slides input{
+    display: none;
+}
+.manual-navigation{
+    position: absolute;
+    width: 40px;
+    margin-top: -143px;
+    display: flex; 
+    justify-content: center; 
+    margin-left: 280px; 
+ 
+ 
+}
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 30px;
+}
+.manual-btn:hover{
+    background-color: white;
+}
+#radio01:checked ~ .first{
+     margin: 0;
+}
+#radio02:checked ~ .first{
+    margin: -12.5%;
+}
+#radio03:checked ~ .first{
+    margin: -25%;
+}
+.navigation-auto div{
+border: 2px solid #c7b289;
+padding: 5px;
+border-radius: 10px;
+cursor: pointer;
+transition: 1s;
+}
+.navigation-auto{
+    position: absolute;
+    width: 600px;
+    margin-top: 257px;
+    display: flex;
+    justify-content: center;
+
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 30px;
+}
+
+#radio01:checked ~ .navigation-auto .auto-btn01{
+    background-color: white;
+}
+#radio02:checked ~ .navigation-auto .auto-btn02{
+    background-color: white;
+}
+#radio03:checked ~ .navigation-auto .auto-btn03{
+    background-color: white;
+}
+
+
+
+.tratamento h3{
+    text-align: center;
+}
  @media screen and (min-width: 0) {
 
     .bside-1 {
@@ -368,7 +459,7 @@ input[type="checkbox"] {
 
     .top-nav {
         background-color: transparent;
-        float: left;
+        float: right;
         margin-top: 15px;
     
         text-align: center;
@@ -430,7 +521,7 @@ input[type="checkbox"] {
     }
     .bside-2 a{
         
-        padding: 18px 10px;
+         padding: 18px 5px; 
         margin: 0;
         line-height: 0.5px;
     }
@@ -526,7 +617,7 @@ input[type="checkbox"] {
 
 
     .bside-2 a{
-        padding: 18px 10px;
+        padding: 18px 5px;
         margin: 0;
     }
 

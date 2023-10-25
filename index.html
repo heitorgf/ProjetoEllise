@@ -24,7 +24,7 @@
         <nav class="top-nav">
             <div class="linkbanner">
                 <div class="bside-1">
-                    <ul class="top-nav-ul">
+                    <ul class="top-nav-ul two-lines">
 
                         <li><a href="javascript:scrollParaElemento()">Serviços</a> </li>
 
@@ -95,13 +95,36 @@
     </section>
     <section class="clearfix"></section>
     <section class="tratamento">
-        <h3 class="middle-content-title">Alguns dos nossos resultados</h3>
-        <div>
+        <h3 class="middle-content-title">Alguns dos nossos resultados!</h3>
+        <div class="slider">
 
+            <div class="slides">
+                <input type="radio" name="radio-bt" id="radio01">
+                <input type="radio" name="radio-bt" id="radio02">
+                <input type="radio" name="radio-bt" id="radio03">
+
+                <div class="slide first">
+                    <img src="images/paciente Edna/1.png" alt="Foto da paciente de antes e depois">
+                </div>
+                <div class="slide second">
+                    <img src="images/paciente gabriela/2.png" alt="Foto da paciente de antes e depois">
+                </div>
+                <div class="slide third">
+                    <img src="images/paciente lidis/3.png" alt="Foto da paciente de antes e depois">
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn01"></div>
+                    <div class="auto-btn02"></div>
+                    <div class="auto-btn03"></div>
+                </div>
+            </div>
+            <div class="manual-navigation"> 
+                <label for="radio01" class="manual-btn"></label>
+                <label for="radio02" class="manual-btn"></label>
+                <label for="radio03" class="manual-btn"></label>
+            </div>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
     </section>
 
     <section class="middle-content row">
@@ -118,7 +141,8 @@
         <article class="col-1-4">
             <span><img src="images/thumbs/IMG_9804.JPG" width="300px" alt=""></span>
             <h3 class="middle-content-title"> Sócios</h3>
-            <p class="middle-content-decoration"> Ellese Odontologia nasceu através do relacionamento de confiança e amor entre seus sócios
+            <p class="middle-content-decoration"> Ellese Odontologia nasceu através do relacionamento de confiança e
+                amor entre seus sócios
                 <a href="https://www.instagram.com/dralleticiaguedes/"><strong>Leticia Guedes</strong></a> e <a
                     href="https://www.instagram.com/drsilvinoalves/"><strong>Silvino Alves</strong></a>, que
                 somando seus desejos, conseguiram planejar, desenvolver e
@@ -166,9 +190,9 @@
                     <textarea placeholder="Digite uma mensagem" name="message" id="message"></textarea>
                     <input type="submit" class="button-default button-default-big" value="Enviar">
                     <input type="reset" class="button-default button-default-stroke button-default-big" value="Limpar">
-                    
+
                     <input type="hidden" name="accessKey" value="f51b0310-b8b2-4f5d-a7b2-d9958d9be864">
-                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+                    <input type="hidden" name="redirectTo" value="www.elleseodontologia.com.br/contato/obrigado">
                 </form>
 
             </div>
@@ -184,7 +208,7 @@
             width="95%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
-    <footer class="final">
+    <footer class="final" id="ende-id">
         <ul class="final-menushare">
             <li><a href="https://www.instagram.com/dralleticiaguedes/" class="icon-instagram"><span
                         class="hidden">Instagram</span></a></li>
@@ -241,7 +265,19 @@
             meuElemento3.scrollIntoView({ behavior: "smooth" });
         }
 
+        let count =1;
+        document.getElementById("radio01").checked= true;
+        setInterval(function(){ 
+            nextImage();    
+        }, 3000)
 
+        function nextImage(){
+            count++;
+            if(count>3){
+                count = 1;
+            }
+            document.getElementById("radio0"+count).checked= true;
+        }
     </script>
 
 </body>
